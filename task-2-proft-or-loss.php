@@ -10,4 +10,17 @@
 // иначе, если числа равны, вывести сообщение            //
 // об отсутствии прибыли и убытка.                       //
 ///////////////////////////////////////////////////////////
+
+// Входные данные
+$firstNumber = readline("Введите первое число: ");
+$secondNumber = readline("Введите второе число: ");
+
+// Вывод
+if ($firstNumber > $secondNumber) {
+	echo "Убыток ".($firstNumber - $secondNumber);
+} elseif ($firstNumber < $secondNumber) {
+	echo "Прибыль ".($secondNumber - $firstNumber);
+} else {
+	echo "Нет ни прибыли, ни убытка";
+}
 ?>
