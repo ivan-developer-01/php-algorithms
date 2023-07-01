@@ -7,4 +7,22 @@
 // Нужно вывести первое число, если оно больше второго,  //
 // иначе вывести второе число.                           //
 ///////////////////////////////////////////////////////////
+
+// Входные данные
+$firstNumber = readline("Введите первое число: ");
+$secondNumber = readline("Введите второе число: ");
+
+$difference = "";
+
+if ($firstNumber > $secondNumber) {
+	$difference = "0";
+} elseif ($firstNumber < $secondNumber) {
+	$difference = "1";
+}
+
+if ($difference == "0") {
+	echo $firstNumber;
+} else {
+	echo $secondNumber;
+}
 ?>
